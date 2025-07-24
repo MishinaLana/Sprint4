@@ -1,12 +1,6 @@
-# Mongo Sharding Repl
+# Mongo Sharding
 
 ## Как запустить
-
-Перейти в папку sharding-repl-cache
-
-```shell
-cd sharding-repl-cache
-```
 
 Запускаем mongodb и приложение
 
@@ -14,7 +8,7 @@ cd sharding-repl-cache
 docker compose up -d
 ```
 
-Инициализируем шарды, реплики и заполняем mongodb данными
+Инициализируем шарды и заполняем mongodb данными
 
 ```shell
 ./scripts/mongo-init.sh
@@ -22,7 +16,7 @@ docker compose up -d
 
 ## Как проверить
 
-Протестировать распределение документов по шардам и репликам
+Протестировать распределение документов по шардам
 
 ```shell
 ./scripts/test.sh
